@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "COMPRAR TELEFONOS";
+}
+<div class="text-center">
+    </br>
+    </br>
+    <h1 class="display-4">REALIZA UN PEDIDO</h1>
+    <p><h3>En esta pestañas vas a poder seleccionar los telefonos que quieres agregar a tu carrito, si le das al + vas a añadirlo al carrito y si le das - vas a poder quitar el producto,la lista se creara en el orden en el que agreges los telefonos(usando listas enlazadas)  </h3></p>
+</div>
+</br>
+</br>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t1.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Galaxy S21</br>ID: 1</h5>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t2.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Galaxy S20 FE 5G</br>ID: 2</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t3.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">OnePlus 8 Glacial Green</br>ID: 3</h5></center>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t4.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">BLU Advance L5</br>ID: 4</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t5.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Electronics Galaxy A52 5G</br>ID: 5</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t6.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Moto G8+ Plus</br>ID: 6</h5></center>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t7.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Galaxy S21</br>ID: 7</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t8.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Moto E</br>ID: 8</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t9.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Moto G Power</br>ID: 9</h5></center>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t10.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">BLU </br>ID: 10</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t11.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Galaxy A10e US</br>ID: 11</h5></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="\imagenes\t12.jpg" alt="Card image cap" width="200" height="400">
+    <div class="card-body">
+      <center><h5 class="card-title">Samsung Galaxy A10s</br>ID: 12</h5></center>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<form method="post">
+  <center>
+  <h2 class="display-4">AÑADIR TELEFONO</h2>
+  </br>
+  NOMBRE:<input type="text" name="Telefono">
+  ID:<input type="number" name="ID">
+  <button style ="text-align:center;"type="submit" class="btn btn-dark">AÑADIR</button>
+  </center>
+</form>
+</br>
+</br>
+</br>
+</br>
+<form method="post" action="/eliminar">
+  <center>
+  <h2 class="display-4">ELIMINAR TELEFONO</h2>
+  </br>
+  ID:<input type="text" name="ID">
+  <button style ="text-align:center;"type="submit" class="btn btn-dark">ELIMINAR</button>
+  </center>
+</form>
+</br>
+</br>
+</br>
+<center>
+<h2 class="display-4">TU LISTA DE COMPRAS</h2>
+</center>
+</br>
+<div>
+ <center><h5>telefono: @ViewBag.Telefono,ID: @ViewBag.ID</h5></center>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
